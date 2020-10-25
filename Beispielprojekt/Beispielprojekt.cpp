@@ -30,7 +30,7 @@ public:
 	// wird bis zu 60x pro Sekunde aufgerufen.
 	// Wenn die Grafikkarte oder der Prozessor nicht mehr hinterherkommen,
 	// dann werden `draw` Aufrufe ausgelassen und die Framerate sinkt
-	int x = 400;
+	int x = 500;
 	int y = 300;
 	int xp1 = 400;
 	int yp1 = 300;
