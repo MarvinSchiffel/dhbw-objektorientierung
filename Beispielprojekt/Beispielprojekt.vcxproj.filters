@@ -35,7 +35,7 @@
     <ClCompile Include="Beispielprojekt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vektor2d.cpp">
+    <ClCompile Include="objekte.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
