@@ -15,13 +15,12 @@ const double DT = 100.0;
 class GameWindow : public Gosu::Window
 {
 public:
-	Gosu::Image bild_rakete;
 	Gosu::Image bild_hintergrund;
 	Gosu::Image bild_auto_türkis;
 	GameWindow()
 		: Window(1920, 1080),
 		bild_hintergrund("Hintergrund.png"),
-		bild_auto_türkis("auto_türkis.png")
+		bild_auto_türkis("auto_tuerkis.png")
 	{
 		set_caption("Gosu Tutorial mit Git");
 	}
@@ -29,8 +28,8 @@ public:
 	// wird bis zu 60x pro Sekunde aufgerufen.
 	// Wenn die Grafikkarte oder der Prozessor nicht mehr hinterherkommen,
 	// dann werden `draw` Aufrufe ausgelassen und die Framerate sinkt
-	int x = 200;
-	int y = 800;
+	int x = 2000;
+	int y = 750;
 
 	void draw() override
 	{
@@ -44,7 +43,11 @@ public:
 
 	void update() override
 	{
-		a = (a + 1);
+		x = (x - 5);
+			if (x < -300) {
+				x = 2000;
+			}
+
 		b = input().mouse_y();
 
 	}
