@@ -7,8 +7,8 @@ class objekte
 {
 	int x = 0.0;
 	int y = 0.0;
-	int status=4;
+	int status = 4;
 	Gosu::Image img;
-	objekt(int x, int y, img);
+	objekte(int x, int y, std::string img);
 	void laufen();
-}
+};
