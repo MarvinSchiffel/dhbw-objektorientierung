@@ -2,7 +2,6 @@
 
 #include <Gosu/Gosu.hpp>
 #include <Gosu/AutoLink.hpp>
-
 #include <vector>
 #include <string>
 #include <iostream>
@@ -17,12 +16,14 @@ class GameWindow : public Gosu::Window
 public:
 	Gosu::Image bild_hintergrund;
 	Gosu::Image bild_auto_türkis;
+	Gosu::Image bild_auto_türkis2;
 	Gosu::Image bild_Oma1;
 	GameWindow()
 		: Window(1920, 1080),
 		bild_hintergrund("Hintergrund.png"),
 		bild_auto_türkis("auto_tuerkis.png"),
-		bild_Oma1("Oma1.png")
+		bild_Oma1("Oma1.png"),
+		bild_auto_türkis2("auto_tuerkis2.png")
 	{
 		set_caption("Gosu Tutorial mit Git");
 	}
@@ -38,13 +39,16 @@ public:
 	int y_Gehweg = 430;
 	
 	double c = (a % 2);
-
+	
 
 	void draw() override
 	{
 		bild_hintergrund.draw_rot(0, 0, 0, 0, 0, 0);
-		if (c=0) {
-			bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
+		if (c == 0) {
+			bild_auto_türkis2.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
+		}
+		else if (c != 0) {
+				bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
 		}
 
 		bild_Oma1.draw_rot(x_Oma1, y_Gehweg, 1, 0, 0, 0, 1, 1);
@@ -81,4 +85,6 @@ int main()
 {
 	GameWindow window;
 	window.show();
+	
+	
 }
