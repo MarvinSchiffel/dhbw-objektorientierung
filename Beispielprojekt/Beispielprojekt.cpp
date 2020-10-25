@@ -28,7 +28,7 @@ public:
 	void draw() override
 	{
 		graphics().draw_line(
-			10, 20, Gosu::Color::GREEN,
+			10, 20, Gosu::Color::BLUE,
 			200, 100, Gosu::Color::GREEN,
 			0.0
 		);
