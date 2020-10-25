@@ -17,6 +17,7 @@ class GameWindow : public Gosu::Window
 public:
 	Gosu::Image bild_hintergrund;
 	Gosu::Image bild_auto_türkis;
+	Gosu::Image bild_auto_türkis2;
 	Gosu::Image bild_oma_steht;
 	Gosu::Image bild_oma_schritt1;
 	Gosu::Image bild_oma_schritt2;
@@ -25,6 +26,7 @@ public:
 		: Window(1920, 1080),
 		bild_hintergrund("Hintergrund.png"),
 		bild_auto_türkis("auto_tuerkis.png"),
+		bild_auto_türkis2("auto_tuerkis2.png"),
 		bild_oma_steht("oma_steht.png"),
 		bild_oma_schritt1("oma_schritt1.png"),
 		bild_oma_schritt2("oma_schritt2.png"),
@@ -42,7 +44,8 @@ public:
 	int y_Oberespur = 620;
 	int y_Unterespur = 800;
 	int y_gehweg = 430;
-	int status = 12;
+	int status = 20;
+	int status_auto1 = 12;
 	
 	void draw() override
 	{
@@ -50,25 +53,32 @@ public:
 
 		bild_Lebensanzeige.draw_rot(0, 0, 1, 0,0,0);
 
-		bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
-		
+		if (status_auto1 >= 12) {
+			bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
+			status_auto1 -= 1;
+		}
+		else if(status_auto1 >= 6){
+			bild_auto_türkis2.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
+			status_auto1 = 12;
+		}
+
 		bild_auto_türkis.draw_rot(x_Auto2, y_Unterespur, 3, 0, 0, 0, -1, 1);
-		
-			if (status >= 12) {
+
+			if (status >= 20) {
 				bild_oma_steht.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status >= 9) {
+			else if (status >= 15) {
 				bild_oma_schritt1.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status >= 6) {
+			else if (status >= 10) {
 				bild_oma_steht.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status >= 3) {
+			else if (status >= 5) {
 				bild_oma_schritt2.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
-				status = 12;
+				status = 20;
 			}
 
 	}
