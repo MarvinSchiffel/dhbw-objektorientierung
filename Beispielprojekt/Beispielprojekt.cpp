@@ -42,7 +42,7 @@ public:
 	int y_Oberespur = 620;
 	int y_Unterespur = 800;
 	int y_gehweg = 430;
-	int status = 4;
+	int status = 12;
 	
 	void draw() override
 	{
@@ -54,21 +54,21 @@ public:
 		
 		bild_auto_türkis.draw_rot(x_Auto2, y_Unterespur, 3, 0, 0, 0, -1, 1);
 		
-			if (status == 4) {
+			if (status >= 12) {
 				bild_oma_steht.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status == 3) {
+			else if (status >= 9) {
 				bild_oma_schritt1.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status == 2) {
+			else if (status >= 6) {
 				bild_oma_steht.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
 				status -= 1;
 			}
-			else if (status == 1) {
+			else if (status >= 3) {
 				bild_oma_schritt2.draw_rot(x_oma1, y_gehweg, 1, 0, 0, 0);
-				status = 4;
+				status = 12;
 			}
 
 	}

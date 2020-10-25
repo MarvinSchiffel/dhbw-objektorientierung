@@ -3,7 +3,9 @@
 #include "Gosu/Gosu.hpp"
 #include <cmath>
 
+
 int status = 4;
+
 
 void objekte::laufen() {
 	if (status == 4) {

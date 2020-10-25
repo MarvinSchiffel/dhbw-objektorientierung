@@ -8,7 +8,7 @@
 #include <Gosu/GraphicsBase.hpp>
 #include <memory>
 #include <vector>
-
+//
 namespace Gosu
 {
     //! Provides functionality for drawing rectangular images.
