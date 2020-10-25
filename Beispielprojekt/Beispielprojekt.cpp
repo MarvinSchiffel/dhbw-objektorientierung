@@ -17,7 +17,7 @@ class GameWindow : public Gosu::Window
 public:
 	Gosu::Image bild;
 	GameWindow()
-		: Window(800, 600)
+		: Window(1280, 720)
 	{
 		set_caption("Gosu Tutorial mit Git");
 	}
