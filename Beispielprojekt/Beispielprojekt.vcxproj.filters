@@ -46,9 +46,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="planet1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="planet2.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -61,11 +58,17 @@
     <Image Include="Hintergrund.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="auto_rot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
     <Image Include="auto_tuerkis.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="auto_rot.png">
+    <Image Include="Oma1.png">
       <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="planet1.png">
+      <Filter>Source Files</Filter>
     </Image>
   </ItemGroup>
 </Project>
