@@ -29,7 +29,7 @@ public:
 	{
 		graphics().draw_line(
 			10, 20, Gosu::Color::RED,
-			200, 100, Gosu::Color::GREEN,
+			200, 100, Gosu::Color::GREE,
 			0.0
 		);
 	}
