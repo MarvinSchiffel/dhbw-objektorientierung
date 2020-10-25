@@ -70,5 +70,8 @@
     <Image Include="planet1.png">
       <Filter>Source Files</Filter>
     </Image>
+    <Image Include="auto_tuerkis2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
