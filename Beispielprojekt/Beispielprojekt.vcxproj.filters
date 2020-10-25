@@ -24,7 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Vektor2d.h">
+    <ClInclude Include="objekte">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
