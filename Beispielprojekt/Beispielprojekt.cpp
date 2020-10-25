@@ -37,6 +37,7 @@ public:
 	int y_Oberespur = 640;
 	int y_Unterespur = 800;
 	int y_Gehweg = 430;
+	int omastatus = 3; // Variable, wo sich Oma in Animation befindet
 	
 	double c = (a % 2);
 	
@@ -51,7 +52,22 @@ public:
 				bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 2, 0, 0, 0, 1, 1);
 		}
 
+		/*
+		if (omastatus == 3){
+			bild_Oma1.draw_rot(x_Oma1, y_Gehweg, 1, 0, 0, 0, 1, 1);
+			omastatus -= 1;
+		}
+		else if (omastatus == 2){
+			bild_Oma2.draw_rot(x_Oma1, y_Gehweg, 1, 0, 0, 0, 1, 1);
+			omastatus -= 1;
+		}
+		else if (omastatus == 1){
+			bild_Oma1.draw_rot(x_Oma1, y_Gehweg, 1, 0, 0, 0, 1, 1);
+			omastatus = 3;
+		}
+		else{*/ 
 		bild_Oma1.draw_rot(x_Oma1, y_Gehweg, 1, 0, 0, 0, 1, 1);
+		//}
 		bild_auto_türkis.draw_rot(x_Auto2, y_Unterespur, 3, 0, 0, 0, -1, 1);
 	}
 
