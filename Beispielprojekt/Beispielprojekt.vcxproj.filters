@@ -49,13 +49,19 @@
     <Image Include="auto_tuerkis.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Oma1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="auto_tuerkis2.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Lebensanzeigebasic.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="oma_steht.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="oma_schritt1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="oma_schritt2.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

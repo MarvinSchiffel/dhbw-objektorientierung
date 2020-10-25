@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+using namespace std;
 
 #include "Vektor2d.h"
 
@@ -78,6 +79,8 @@ public:
 // C++ Hauptprogramm
 int main()
 {
+	cout << "Dein Name" << endl;
+
 	GameWindow window;
 	window.show();
 }
