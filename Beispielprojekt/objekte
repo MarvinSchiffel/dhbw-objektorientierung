@@ -1,0 +1,14 @@
+#pragma once
+#include <Gosu\Image.hpp>
+#include <iostream>
+#include <string>
+
+class objekte
+{
+	int x = 0.0;
+	int y = 0.0;
+	int status=4;
+	Gosu::Image img;
+	objekt(int x, int y, img);
+	void laufen();
+}
