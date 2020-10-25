@@ -19,7 +19,7 @@ public:
 	Gosu::Image bild_planet_1;
 	Gosu::Image bild_planet_2;
 	GameWindow()
-		: Window(1600, 1200),
+		: Window(1920, 1080),
 		bild_rakete("rakete.png"),
 		bild_planet_1("planet1.png"),
 		bild_planet_2("planet2.png")
