@@ -3,6 +3,15 @@
 #include "Gosu/Gosu.hpp"
 #include <cmath>
 
+objekte::objekte(int x, int y, std::string img)
+	: x(x)
+	, y(y)
+	, img(img)
+{
+
+}
+
+
 void objekte::laufen() {
 	if (status == 4) {
 		this->img = Gosu::Image("oma_steht.png");
