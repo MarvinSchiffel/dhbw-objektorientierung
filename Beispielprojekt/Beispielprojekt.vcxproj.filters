@@ -61,10 +61,13 @@
     <Image Include="Hintergrund.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="auto_tuerkis.png">
+    <Image Include="auto_türkis.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="auto_rot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="auto_rot2.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

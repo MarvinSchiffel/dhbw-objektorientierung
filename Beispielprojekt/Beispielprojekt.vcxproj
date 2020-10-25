@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="auto_rot.png" />
+    <Image Include="auto_rot2.png" />
     <Image Include="auto_türkis.png" />
     <Image Include="Hintergrund.png" />
     <Image Include="planet1.png" />
