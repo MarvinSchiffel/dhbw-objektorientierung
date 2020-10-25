@@ -24,7 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Vektor2d.h">
+    <ClInclude Include="objekte.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="Beispielprojekt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vektor2d.cpp">
+    <ClCompile Include="objekte.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
