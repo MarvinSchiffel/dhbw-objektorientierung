@@ -1,5 +1,4 @@
 #include "stdafx.h"
-#include "objekte.h"
 #include <Gosu/Gosu.hpp>
 #include <Gosu/AutoLink.hpp>
 
@@ -11,7 +10,7 @@ using namespace std;
 
 // Simulationsgeschwindigkeit
 const double DT = 100.0;
-
+//
 class GameWindow : public Gosu::Window
 {
 public:
