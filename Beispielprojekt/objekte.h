@@ -5,10 +5,11 @@
 
 class objekte
 {
+public:
 	int x = 0.0;
 	int y = 0.0;
-	int status = 4;
 	Gosu::Image img;
-	objekte(int x, int y, std::string img);
+	objekte() {};
+	objekte(int x, int y, Gosu::Image img) : x(x), y(y), img(img) {};
 	void laufen();
 };
