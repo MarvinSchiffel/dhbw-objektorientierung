@@ -61,5 +61,8 @@
     <Image Include="Hintergrund.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="auto_türkis.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
