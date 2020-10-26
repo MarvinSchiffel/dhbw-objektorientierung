@@ -178,6 +178,7 @@
     <Image Include="karohintergrund.png" />
     <Image Include="Lebensanzeigebasic.png" />
     <Image Include="level1.png" />
+    <Image Include="Mashalla.png" />
     <Image Include="oma_schritt1.png" />
     <Image Include="oma_schritt2.png" />
     <Image Include="oma_steht.png" />
