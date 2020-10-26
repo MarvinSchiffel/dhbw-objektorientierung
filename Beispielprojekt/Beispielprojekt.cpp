@@ -32,6 +32,8 @@ public:
 	Gosu::Image bild_auto_rot2;
 	//level 1
 	Gosu::Image bild_level1;
+	Gosu::Image bild_auto1;
+	Gosu::Image bild_polizeiauto;
 	//level 2
 	Gosu::Image bild_level2;
 	
@@ -53,10 +55,12 @@ public:
 		bild_auto_rot2("auto_rot2.png"),
 		//level 1
 		bild_level1("level1.png"),
+		bild_auto1("auto1.png"),
+		bild_polizeiauto("polizeiauto.png"),
 		//level 2
 		bild_level2("Mashalla.png")
 	{
-		set_caption("Gosu Tutorial mit Git");
+		set_caption("Safe the Granny");
 	}
 
 	// wird bis zu 60x pro Sekunde aufgerufen.
@@ -67,7 +71,7 @@ public:
 	int level_counter = 1;
 	//Oma
 	double x_oma = 0;
-	double y_oma = 500;
+	double y_oma = 450;
 	double v_oma = 8;
 	int status = 20;
 
@@ -79,7 +83,10 @@ public:
 	int y_gehweg = 430;
 
 	//level 1
-	
+	int x_spur1 = 240;
+	int x_spur2 = 400;
+	int y_f1 = -500;
+	int y_f2 = -500;
 	
 	//Aufruf von draw Funktionen
 	void draw() override
@@ -87,8 +94,8 @@ public:
 		//Lebensanzeige
 		bild_Lebensanzeige_3.draw_rot(0, 0, 2, 0, 0, 0);
 
-		//Oma bewegung
-		if (input().down(Gosu::KB_S) || input().down(Gosu::KB_W) || input().down(Gosu::KB_D) || input().down(Gosu::KB_A)) {
+		//Oma bewegung vorwärts/hoch/runter
+		if (input().down(Gosu::KB_D) || input().down(Gosu::KB_W) || input().down(Gosu::KB_S)|| input().down(Gosu::KB_A)) {
 			if (status >= 20) {
 				bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, -1, 1);
 				status -= 1;
@@ -109,6 +116,27 @@ public:
 		else {
 			bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, -1, 1);
 		}
+		//Oma bewegung zurück
+		/*else if (input().down(Gosu::KB_A) || input().down(Gosu::KB_A) && input().down(Gosu::KB_W) || input().down(Gosu::KB_A) && input().down(Gosu::KB_S)) {
+			if (status >= 20) {
+				bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, 1, 1);
+				status -= 1;
+				}
+				else if (status >= 15) {
+				bild_oma_schritt1.draw_rot(x_oma, y_oma, 5, 0, 1, 0, 1, 1);
+				status -= 1;
+				}
+				else if (status >= 10) {
+				bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, 1, 1);
+				status -= 1;
+				}
+				else if (status >= 5) {
+				bild_oma_schritt2.draw_rot(x_oma, y_oma, 5, 0, 1, 0, 1, 1);
+				status = 20;
+			}
+		}
+
+		*/
 
 		//level intro
 		if (level_counter == 1) {
@@ -127,8 +155,11 @@ public:
 		//level 1
 		else if(level_counter == 2) {
 
-
 			bild_level1.draw_rot(0, 0, 0, 0, 0, 0);
+
+			bild_auto1.draw_rot(x_spur1, y_f1, 1, 0, 0, 0);
+
+			bild_polizeiauto.draw_rot(x_spur2, y_f2, 1, 0, 0, 0);
 
 			if (x_oma >= 1980) {
 				level_counter = 3;
@@ -177,6 +208,20 @@ public:
 				x_Auto2 = -150;
 			}
 		}
+		//Autos LvL 1
+		else if (level_counter == 2) {
+			y_f1 = (y_f1 + 5);
+			if (y_f1 > 1200) {
+				y_f1 = -500;
+			}
+			y_f2 = (y_f2 + 10);
+			if (y_f2 > 1200) {
+				y_f2 = -500;
+			}
+		}
+	
+	
+		
 	}
 };
 
