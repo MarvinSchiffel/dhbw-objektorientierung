@@ -172,11 +172,14 @@
   <ItemGroup>
     <Image Include="auto1.png" />
     <Image Include="auto_rot.png" />
+    <Image Include="auto_rot2.png" />
     <Image Include="auto_tuerkis.png" />
     <Image Include="auto_tuerkis2.png" />
-    <Image Include="Hintergrund.png" />
     <Image Include="karohintergrund.png" />
-    <Image Include="Lebensanzeigebasic.png" />
+    <Image Include="lebensanzeige_0.png" />
+    <Image Include="lebensanzeige_1.png" />
+    <Image Include="lebensanzeige_2.png" />
+    <Image Include="lebensanzeige_3.png" />
     <Image Include="level1.png" />
     <Image Include="Mashalla.png" />
     <Image Include="oma_schritt1.png" />
