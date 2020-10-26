@@ -58,5 +58,11 @@
     <Image Include="oma_schritt2.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="karohintergrund.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="strassenbild.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
