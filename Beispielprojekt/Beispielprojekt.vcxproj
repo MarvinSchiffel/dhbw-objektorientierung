@@ -170,15 +170,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="auto1.png" />
     <Image Include="auto_rot.png" />
     <Image Include="auto_tuerkis.png" />
     <Image Include="auto_tuerkis2.png" />
     <Image Include="Hintergrund.png" />
     <Image Include="karohintergrund.png" />
     <Image Include="Lebensanzeigebasic.png" />
+    <Image Include="level1.png" />
     <Image Include="oma_schritt1.png" />
     <Image Include="oma_schritt2.png" />
     <Image Include="oma_steht.png" />
+    <Image Include="polizeiauto.png" />
     <Image Include="strassenbild.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

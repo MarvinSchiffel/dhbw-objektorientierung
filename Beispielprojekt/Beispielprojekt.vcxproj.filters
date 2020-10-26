@@ -64,5 +64,14 @@
     <Image Include="strassenbild.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="level1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="polizeiauto.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="auto1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
