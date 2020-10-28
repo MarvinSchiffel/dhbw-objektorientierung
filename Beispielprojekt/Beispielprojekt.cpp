@@ -6,7 +6,7 @@
 #include <string>
 #include <iostream>
 
-#include "objekte.h"
+#include "oma.h"
 
 using namespace std;
 
@@ -15,6 +15,8 @@ const double DT = 100.0;
 //
 class GameWindow : public Gosu::Window
 {
+	oma*oma1;
+
 public:
 	//Allgemein
 	Gosu::Image bild_Lebensanzeige_0;
@@ -36,31 +38,33 @@ public:
 	Gosu::Image bild_polizeiauto;
 	//level 2
 	Gosu::Image bild_level2;
-	
+	//Test
+
 	//Bildnamen mit Bilddaten initialisieren
 	GameWindow() : Window(1920, 1080),
 		//Algemein
-		bild_oma_steht("oma_steht.png"),
-		bild_oma_schritt1("oma_schritt1.png"),
-		bild_oma_schritt2("oma_schritt2.png"),
-		bild_Lebensanzeige_0("Lebensanzeige_0.png"),
-		bild_Lebensanzeige_1("Lebensanzeige_1.png"),
-		bild_Lebensanzeige_2("Lebensanzeige_2.png"),
-		bild_Lebensanzeige_3("Lebensanzeige_3.png"),
+		bild_oma_steht("bilder/oma_steht.png"),
+		bild_oma_schritt1("bilder/oma_schritt1.png"),
+		bild_oma_schritt2("bilder/oma_schritt2.png"),
+		bild_Lebensanzeige_0("bilder/Lebensanzeige_0.png"),
+		bild_Lebensanzeige_1("bilder/Lebensanzeige_1.png"),
+		bild_Lebensanzeige_2("bilder/Lebensanzeige_2.png"),
+		bild_Lebensanzeige_3("bilder/Lebensanzeige_3 (3).png"),
 		// Intro
-		bild_straßenbild("strassenbild.png"),
-		bild_auto_türkis("auto_tuerkis.png"),
-		bild_auto_türkis2("auto_tuerkis2.png"),
-		bild_auto_rot("auto_rot.png"),
-		bild_auto_rot2("auto_rot2.png"),
+		bild_straßenbild("bilder/strassenbild.png"),
+		bild_auto_türkis("bilder/auto_tuerkis.png"),
+		bild_auto_türkis2("bilder/auto_tuerkis2.png"),
+		bild_auto_rot("bilder/auto_rot.png"),
+		bild_auto_rot2("bilder/auto_rot2.png"),
 		//level 1
-		bild_level1("level1.png"),
-		bild_auto1("auto1.png"),
-		bild_polizeiauto("polizeiauto.png"),
+		bild_level1("bilder/level1.png"),
+		bild_auto1("bilder/auto1.png"),
+		bild_polizeiauto("bilder/polizeiauto.png"),
 		//level 2
-		bild_level2("Mashalla.png")
+		bild_level2("bilder/Mashalla.png")
 	{
 		set_caption("Safe the Granny");
+		oma1 = new oma();
 	}
 
 	// wird bis zu 60x pro Sekunde aufgerufen.
@@ -84,7 +88,7 @@ public:
 
 	//level 1
 	int x_spur1 = 240;
-	int x_spur2 = 400;
+	int x_spur2 = 500;
 	int y_f1 = -500;
 	int y_f2 = -500;
 	

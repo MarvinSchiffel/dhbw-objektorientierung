@@ -157,11 +157,13 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="oma.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Beispielprojekt.cpp" />
+    <ClCompile Include="oma.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -170,23 +172,26 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="auto1.png" />
-    <Image Include="auto_rot.png" />
-    <Image Include="auto_rot2.png" />
-    <Image Include="auto_tuerkis.png" />
-    <Image Include="auto_tuerkis2.png" />
+    <Image Include="bilder\auto1.png" />
+    <Image Include="bilder\auto_rot.png" />
+    <Image Include="bilder\auto_rot2.png" />
+    <Image Include="bilder\auto_tuerkis.png" />
+    <Image Include="bilder\auto_tuerkis2.png" />
+    <Image Include="bilder\Hintergrund.png" />
+    <Image Include="bilder\lebensanzeige_0.png" />
+    <Image Include="bilder\lebensanzeige_1.png" />
+    <Image Include="bilder\lebensanzeige_2.png" />
+    <Image Include="bilder\lebensanzeige_3 (3).png" />
+    <Image Include="bilder\level1.png" />
+    <Image Include="bilder\lkw.png" />
+    <Image Include="bilder\Mashalla.png" />
+    <Image Include="bilder\Oma1.png" />
+    <Image Include="bilder\oma_schritt1.png" />
+    <Image Include="bilder\oma_schritt2.png" />
+    <Image Include="bilder\oma_steht.png" />
+    <Image Include="bilder\polizeiauto.png" />
+    <Image Include="bilder\strassenbild.png" />
     <Image Include="karohintergrund.png" />
-    <Image Include="lebensanzeige_0.png" />
-    <Image Include="lebensanzeige_1.png" />
-    <Image Include="lebensanzeige_2.png" />
-    <Image Include="lebensanzeige_3.png" />
-    <Image Include="level1.png" />
-    <Image Include="Mashalla.png" />
-    <Image Include="oma_schritt1.png" />
-    <Image Include="oma_schritt2.png" />
-    <Image Include="oma_steht.png" />
-    <Image Include="polizeiauto.png" />
-    <Image Include="strassenbild.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\bilder">
+      <UniqueIdentifier>{18c17a9b-c785-40ae-9fbc-e188e5309b58}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,6 +27,9 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="oma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -32,58 +38,70 @@
     <ClCompile Include="Beispielprojekt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="oma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="auto_rot.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="auto_tuerkis.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="auto_tuerkis2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="oma_steht.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="oma_schritt1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="oma_schritt2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="karohintergrund.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="strassenbild.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\auto_rot.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="level1.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\auto_rot2.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="polizeiauto.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\auto_tuerkis.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="auto1.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\auto_tuerkis2.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="Mashalla.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\auto1.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="auto_rot2.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\Hintergrund.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="lebensanzeige_1.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\lebensanzeige_0.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="lebensanzeige_0.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\lebensanzeige_1.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="lebensanzeige_2.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\lebensanzeige_2.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
-    <Image Include="lebensanzeige_3.png">
-      <Filter>Resource Files</Filter>
+    <Image Include="bilder\lebensanzeige_3 (3).png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\level1.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\lkw.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\Mashalla.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\oma_schritt1.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\oma_schritt2.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\oma_steht.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\Oma1.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\polizeiauto.png">
+      <Filter>Resource Files\bilder</Filter>
+    </Image>
+    <Image Include="bilder\strassenbild.png">
+      <Filter>Resource Files\bilder</Filter>
     </Image>
   </ItemGroup>
 </Project>
