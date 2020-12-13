@@ -43,9 +43,11 @@ public:
 	//Bildnamen mit Bilddaten initialisieren
 	GameWindow() : Window(1920, 1080),
 		//Algemein
+		/*
 		bild_oma_steht("bilder/oma_steht.png"),
 		bild_oma_schritt1("bilder/oma_schritt1.png"),
 		bild_oma_schritt2("bilder/oma_schritt2.png"),
+		*/
 		bild_Lebensanzeige_0("bilder/Lebensanzeige_0.png"),
 		bild_Lebensanzeige_1("bilder/Lebensanzeige_1.png"),
 		bild_Lebensanzeige_2("bilder/Lebensanzeige_2.png"),
@@ -64,7 +66,8 @@ public:
 		bild_level2("bilder/Mashalla.png")
 	{
 		set_caption("Safe the Granny");
-		oma1 = new oma();
+		oma oma1(float x_oma, float y_oma);
+		oma1.move(Gosu::Image("bilder/oma_steht.png"), Gosu::Image("bilder/oma_schritt1.png"), Gosu::Image("bilder/oma_schritt2.png");
 	}
 
 	// wird bis zu 60x pro Sekunde aufgerufen.
@@ -80,8 +83,8 @@ public:
 	int status = 20;
 
 	//level Intro
-	int x_Auto1 = 2000;
-	int x_Auto2 = -150;
+	int x_auto1 = 2000;
+	int x_auto2 = -150;
 	int y_Oberespur = 620;
 	int y_Unterespur = 830;
 	int y_gehweg = 430;
@@ -99,6 +102,7 @@ public:
 		bild_Lebensanzeige_3.draw_rot(0, 0, 2, 0, 0, 0);
 
 		//Oma bewegung vorwärts/hoch/runter
+		/*
 		if (input().down(Gosu::KB_D) || input().down(Gosu::KB_W) || input().down(Gosu::KB_S)|| input().down(Gosu::KB_A)) {
 			if (status >= 20) {
 				bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, -1, 1);
@@ -120,6 +124,7 @@ public:
 		else {
 			bild_oma_steht.draw_rot(x_oma, y_oma, 5, 0, 1, 0, -1, 1);
 		}
+		*/
 		//Oma bewegung zurück
 		/*else if (input().down(Gosu::KB_A) || input().down(Gosu::KB_A) && input().down(Gosu::KB_W) || input().down(Gosu::KB_A) && input().down(Gosu::KB_S)) {
 			if (status >= 20) {
@@ -147,9 +152,9 @@ public:
 
 			bild_straßenbild.draw_rot(0, 0, 1, 0, 0, 0);
 
-			bild_auto_türkis.draw_rot(x_Auto1, y_Oberespur, 3, 0, 0, 0, 1, 1);
+			bild_auto_türkis.draw_rot(x_auto1, y_Oberespur, 3, 0, 0, 0, 1, 1);
 			
-			bild_auto_rot2.draw_rot(x_Auto2, y_Unterespur, 4, 0, 0, 0, -1, 1);	
+			bild_auto_rot2.draw_rot(x_auto2, y_Unterespur, 4, 0, 0, 0, -1, 1);	
 
 			if (x_oma >= 1980) {
 				level_counter = 2;
@@ -201,18 +206,18 @@ public:
 		if (input().down(Gosu::KB_A)) {
 			x_oma -= v_oma;
 		}
-		//Autos im Intro
+		//Level 1
 		if (level_counter == 1) {
-			x_Auto1 = (x_Auto1 - 8);
-			if (x_Auto1 < -400) {
-				x_Auto1 = 2000;
+			x_auto1 = (x_auto1 - 8);
+			if (x_auto1 < -400) {
+				x_auto1 = 2000;
 			}
-			x_Auto2 = (x_Auto2 + 10);
-			if (x_Auto2 > 2300) {
-				x_Auto2 = -150;
+			x_auto2 = (x_auto2 + 10);
+			if (x_auto2 > 2300) {
+				x_auto2 = -150;
 			}
 		}
-		//Autos LvL 1
+		//Autos LvL 2
 		else if (level_counter == 2) {
 			y_f1 = (y_f1 + 5);
 			if (y_f1 > 1200) {
@@ -223,16 +228,13 @@ public:
 				y_f2 = -500;
 			}
 		}
-	
-	
-		
 	}
 };
 
 // C++ Hauptprogramm
 int main()
 {
-	
+
 	GameWindow window;
 	window.show();
 	
